@@ -1,0 +1,129 @@
+* {
+    background-color: rgb(209, 36, 36);
+}
+
+.Holder {
+    background-color: white;
+    width: 30%;
+    margin-left: 35%;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+
+.cardTitle {
+    background-color: white;
+}
+
+.artistName {
+    background-color: white;
+}
+
+.duration {
+    background-color: white;
+}
+
+.button1 {
+    background-color: #000000; /* Green */
+    border: none;
+    border-radius: 7%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    height: 8%;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.pause {
+    background-color: #000000; /* Green */
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    height: 8%;
+    margin: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.start {
+    background-color: #fffffffd; /* Green */
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 16px;
+    height: 8%;
+    margin: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+
+}
+
+.favorited {
+    background-color: #e0a500; /* Green */
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 16px;
+    height: 8%;
+    margin: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    color:rgb(0, 0, 0)
+}
+  
+.dropDown-content {
+    display: none;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.input-back {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: black;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.favoritesBtn {
+    background-color: #f09000; /* Green */
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 16px;
+    height: 8%;
+    margin: 5px;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
