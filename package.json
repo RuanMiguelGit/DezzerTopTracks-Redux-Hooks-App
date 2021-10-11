@@ -1,5 +1,6 @@
 {
   "name": "manipulaedezzer",
+  "proxy": "https://api.deezer.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

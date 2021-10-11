@@ -15,32 +15,31 @@ import Button from '../Components/Button';
 export default function TopTracks() {
 
   const dispatch = useDispatch()
-  const { apiResponse } = bindActionCreators(actionCreators, dispatch)
+  const { apiResponse, addFavorite } = bindActionCreators(actionCreators, dispatch)
   const [loading, setLoading] = useState(true);
   const [apiData, setApiData] = useState([])
   const [dropDown, setDropDown] = useState('Título')
   const [query, setQuery] = useState('');
   let history = useHistory()
   const searchOn = () => {
-    let searchTerm =  query.charAt(0).toUpperCase() + query.slice(1)
-
+    let searchTerm =  query.toUpperCase()
     if (searchTerm === ''){
       return apiData
     }
 
     if(searchTerm !== '' && dropDown === 'Título'){
 
-     return apiData.filter(item => item.title.includes(searchTerm))
+     return apiData.filter(item => item.title.toUpperCase().includes(searchTerm))
     }
 
     if(searchTerm !== '' && dropDown === 'Artista'){
 
-      return Object.values(apiData).flat().filter(item => item.artist.name.includes(searchTerm))
+      return Object.values(apiData).flat().filter(item => item.artist.name.toUpperCase().includes(searchTerm))
     }
        
     if(searchTerm !== '' && dropDown === 'Album'){
 
-    return Object.values(apiData).flat().filter(item => item.album.title.includes(searchTerm) )
+    return Object.values(apiData).flat().filter(item => item.album.title.toUpperCase().includes(searchTerm) )
     }
 
   }
@@ -74,7 +73,11 @@ export default function TopTracks() {
         value={dropDown}
         change={setDropDown}     
       />
-      {loading ?  <Loading /> : searchOn().map((data) => <Tracks tracks={data}/>)}
+      {loading ?  <Loading /> : searchOn().map((data) => <Tracks 
+      tracks={data} 
+      favoriteFunc={addFavorite}
+      favoriteName={'Favoritar'}
+      />)}
       
     </div>
   );

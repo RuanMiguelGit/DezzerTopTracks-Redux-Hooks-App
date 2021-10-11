@@ -1,20 +1,13 @@
 import React, { useState, useRef } from 'react'
-import { useDispatch } from "react-redux"
-import { bindActionCreators } from 'redux'
-import { actionCreators } from '../State/index'
 import Button from '../Components/Button'
 import '../Styles/TopTracks.css'
 
-export default function Tracks({ tracks }) {
-  const { title, artist, preview, link, duration, album } = tracks
+export default function Tracks({ tracks, favoriteFunc, favoriteName }) {
+  const { title, artist, preview, link, duration, album, id } = tracks
   const { name } = artist
   const { cover_medium } = album
   const [audioStatus, changeAudioStatus] = useState(false);
   const myRef = useRef();
-
-
-  const dispatch = useDispatch()
-  const { addFavorite } = bindActionCreators(actionCreators, dispatch)
 
   const startAudio = () => {
     myRef.current.play();
@@ -27,6 +20,8 @@ export default function Tracks({ tracks }) {
   };
 
   return (
+    <div>
+    { tracks.lenght !== 0 ?
     <div>
         <div className = "Holder"> 
           <h1 className='cardTitle'>{title}</h1>
@@ -54,9 +49,11 @@ export default function Tracks({ tracks }) {
         btnclass='start'
         />
       )}
-      <Button onClick={()=> addFavorite({title, name, album, duration, link, preview, artist})}
-      name='Favoritar'
+      <Button onClick={()=> favoriteFunc({id, title, name, album, duration, link, preview, artist})}
+      name={favoriteName}
       btnclass='favorited' />
+    </div>
+   : '' }
     </div>
   );
 }

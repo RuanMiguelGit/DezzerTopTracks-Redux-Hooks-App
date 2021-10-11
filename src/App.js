@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/topTracks" component={ TopTracks } />
+        <Route exact path="/" component={ TopTracks } />
         <Route exact path="/favorites" component={ Favorites } />
       </Switch>
     </div>

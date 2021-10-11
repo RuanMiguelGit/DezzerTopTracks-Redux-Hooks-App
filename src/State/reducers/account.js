@@ -19,6 +19,13 @@ const INITIAL_STATE = {
             ...state,
             apiResponse: action.payload.ApiData
         };
+
+      case 'REMOVE_FAVORITE':
+        return {
+          ...state,
+          favorites: state.favorites.filter((item) => item.id !== action.payload.delete),
+    };
+
     default:
       return state;
       }

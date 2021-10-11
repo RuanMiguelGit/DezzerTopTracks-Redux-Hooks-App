@@ -12,3 +12,9 @@ export const apiResponse = (value) => ({
     },
   });
 
+export const removeFavorite = (value) => ({
+    type: 'REMOVE_FAVORITE',
+    payload: {
+      delete: value.id,
+    },
+  });
