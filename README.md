@@ -2,7 +2,7 @@
 
 # Boas vindas ao repositório do projeto de TopTracks-Dezzer - App
 
-<h2> Objectivos do Projeto</h2>
+<h2> Objetivos do Projeto</h2>
 <li>Deverá apresentar a lista das principais músicas do momento listadas na Deezer</li>
 <li>Também deve existir um campo de pesquisa por texto onde podemos pesquisar por álbum, artista, ou título musical;</li>
 <li>Quando realizar alguma pesquisa, a listagem inicial deve ser substituída pela listagem referente a pesquisa. (Usar o mesmo componente de listagem)</li>
