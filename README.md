@@ -2,7 +2,7 @@
 
 # Boas vindas ao repositório do projeto de TopTracks-Dezzer - App
 
-<img src="https://media.giphy.com/media/NS19LiV9XCmyCIomPI/giphy.gif" width="70%" height="70%" />
+<img src="https://media.giphy.com/media/msWMWz5cBaQXLWippo/giphy.gif" width="80%" height="80%" />
 
 
 <h2> Objetivos do Projeto</h2>
