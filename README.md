@@ -2,6 +2,9 @@
 
 # Boas vindas ao repositório do projeto de TopTracks-Dezzer - App
 
+<img src="https://media.giphy.com/media/NS19LiV9XCmyCIomPI/giphy.gif" width="70%" height="70%" />
+
+
 <h2> Objetivos do Projeto</h2>
 <li>Deverá apresentar a lista das principais músicas do momento listadas na Deezer</li>
 <li>Também deve existir um campo de pesquisa por texto onde podemos pesquisar por álbum, artista, ou título musical;</li>
